@@ -19,18 +19,13 @@ public class Comparar {
 
         }
         else {
-            if (compar) {
-                System.out.println("Las frases son iguales");
+            System.out.println("Las frases no son iguales");
 
-
-            } else {
-                System.out.println("Las frases no son iguales");
-
-                if (compar2 > 0) {
-                    System.out.println("La frase 1 tiene por lo menos un caracter diferente que la  2 no ");
-                } else System.out.println("La frase 2 tiene por lo menos una caracter que la  1 no ");
-            }
+            if (compar2 > 0) {
+                System.out.println("La frase 1 tiene por lo menos un caracter diferente que la  2 no ");
+            } else System.out.println("La frase 2 tiene por lo menos una caracter que la  1 no ");
         }
+
 
 
     }
