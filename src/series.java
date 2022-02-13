@@ -1,16 +1,16 @@
 public class series {
-    private String Nombre;
+    private String Titulo;
     private int num_temporadas;
     boolean entregado;
     private String genero;
     private String creador;
 
-    public String getNombre() {
-        return Nombre;
+    public String getTitulo() {
+        return Titulo;
     }
 
-    public void setNombre(String nombre) {
-        this.Nombre = nombre;
+    public void setTitulo(String nombre) {
+        this.Titulo = nombre;
     }
 
     public int getNum_temporadas() {
@@ -38,7 +38,7 @@ public class series {
     }
 
     public series(){
-        this.Nombre = "";
+        this.Titulo = "";
         this.num_temporadas = 3;
         this.entregado = false;
         this.creador="";
@@ -46,7 +46,7 @@ public class series {
     }
 
     public series(String titulo, String creador){
-        this.Nombre = titulo;
+        this.Titulo = titulo;
         this.num_temporadas = 3;
         this.entregado = false;
         this.creador=creador;
@@ -54,14 +54,14 @@ public class series {
     }
 
     public series(String titulo, int numtemp, String  creador, String genero){
-        this.Nombre = titulo;
+        this.Titulo = titulo;
         this.num_temporadas = numtemp;
         this.entregado = false;
         this.creador=creador;
         this.genero= genero;
     }
     public String toString() {
-        return "Serie [=" + Nombre + ", el autor es=" + creador + ", su genero es =" + genero + ", tiene ="
+        return "Serie [=" + Titulo + ", el autor es=" + creador + ", su genero es =" + genero + ", tiene ="
                 + num_temporadas+" temporadas" + ", se encuentra entregada ? =" +entregado +"]";
     }
 }

@@ -13,6 +13,12 @@ public class Main_Electrodomesticos {
         El.add(new lavadora());
         El.add(new Televisor());
         El.add(new Televisor(120,"negro",'F',15,45,true));
+        El.add(new lavadora(150,"negro", 'A',25,32));
+        El.add(new Electrodomestico(170,"azul",'B',23));
+        El.add(new Televisor());
+        El.add(new Electrodomestico(120,20));
+        El.add(new lavadora(120,12));
+        El.add(new Televisor(170,23));
         for (Electrodomestico Ele : El){
             if (Ele instanceof Televisor) Precio_TV+=Ele.Precio_Fin();
             else if(Ele instanceof lavadora) Precio_lav+=Ele.Precio_Fin();
